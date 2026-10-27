@@ -83,7 +83,7 @@ The domain is registered at WordPress.com, so DNS stays there. Through the WordP
 - **`username.github.io` repositories go live on their own.** GitHub turns on Pages with the classic Jekyll build as soon as you push to that repository. Claude pushed a first draft before I'd reviewed it, and it was public on github.io right away. After that, the rule was screenshots first, push second. Set the Pages source to **GitHub Actions** before your first push if you want to stay in control.
 - **Check the Node version.** The first deploy failed at the build step. The current Astro major needs Node 22.22 or newer, and the action Claude started with ran an older Node. Calling `setup-node` with Node 24 explicitly fixed it.
 - **Two builds at once.** Until the Pages source is switched to Actions, the classic Jekyll build keeps running next to your workflow and fails on every push, because there's no Jekyll site anymore.
-- **Images still live on WordPress.** The old posts' images are served from WordPress.com's file CDN. They have to move into the repository before I cancel the WordPress plan.
+- **Images were the last thing to move.** Claude's environment couldn't reach WordPress.com, so it wrote a one-off GitHub Actions job that downloaded the 37 images from the old posts into the repository. Its first attempt used the wrong WordPress address, so the old images were broken for about an hour after the DNS switch.
 
 ## What's next
 
