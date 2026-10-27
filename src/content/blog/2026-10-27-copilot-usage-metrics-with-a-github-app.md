@@ -25,13 +25,14 @@ Installation token  ──►  GET .../copilot/metrics/reports/...  ──►  s
 2. **Permissions.** Give the app **Enterprise Copilot metrics: Read** and/or **Organization Copilot metrics: Read**.
 3. **Install it where you query.** An enterprise installation only covers `/enterprises/...` endpoints. For org-level reports, install the app on **each organization**.
 4. **Approve permission changes.** If you add a permission later, an owner has to accept it, and you need a **new** token afterwards.
-5. **Private key.** Generate one under *App settings → Private keys*. In automation, keep it in Key Vault and sign a fresh JWT on every run. You don't need a client secret.
+5. **Private key.** Generate one under *App settings → Private keys*. In automation, copy the contents of the `.pem` file into a Key Vault **secret** (Key Vault stores text, not files), read it at runtime and sign a fresh JWT on every run. You don't need a client secret.
 
 ## Sign the JWT
 
 ```powershell
 $clientId = "<CLIENT_ID>"   # or App ID
 $pem      = Get-Content ".\<APP_NAME>.private-key.pem" -Raw
+# In automation: $pem = Get-AzKeyVaultSecret -VaultName "<KEY_VAULT>" -Name "<SECRET_NAME>" -AsPlainText
 
 function ConvertTo-B64Url([byte[]]$b) {
     [Convert]::ToBase64String($b).TrimEnd('=').Replace('+','-').Replace('/','_')
