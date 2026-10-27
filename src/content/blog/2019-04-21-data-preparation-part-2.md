@@ -6,7 +6,7 @@ tags: ["data", "datapreparation", "DataSerie"]
 archived: true
 ---
 
-In the previous [post](https://mohamedsahbicom.wordpress.com/2019/03/16/data-preparation-part-1/), we went through the pre-preparation phase,  collecting meta-data, data profiling and data preparation rules. This post is mainly about dealing with missing values aka Nulls.
+In the previous [post](/2019/03/16/data-preparation-part-1/), we went through the pre-preparation phase,  collecting meta-data, data profiling and data preparation rules. This post is mainly about dealing with missing values aka Nulls.
 
 Before looking for methods to deal with nulls, confirm that you are really missing some data. It is possible to have some blanks in the data set that can be replaced with a value. Non quality data may have null in place of **no**. Let’s say a column that only has “yes” and “null” values. You should verify if the system/application that generates the data doesn't assign any value when it is negative/false response. In that case, you only replace **null** with **no** and don’t delete the column.
 
