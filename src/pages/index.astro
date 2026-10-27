@@ -11,6 +11,11 @@ const stats = [
   { num: 'Learn, then teach', title: 'Communities', text: 'Started the DevOps Community of Practice and co-founded InnerSource at Atlas Copco.' },
 ];
 
+const projects = [
+  { name: 'github-copilot-enterprise-usage-metrics', status: 'Alpha', url: 'https://github.com/MohamedSahbi/github-copilot-enterprise-usage-metrics', text: 'A portal for GitHub Copilot usage analytics on Azure: Node, SQL Server, Terraform and Azure Pipelines.' },
+  { name: 'ai-toolkit', status: 'Early', url: 'https://github.com/MohamedSahbi/ai-toolkit', text: 'Reusable AI skills, agents, instructions and prompts for assistants like Copilot and Claude, built from real DevOps and cloud automation work.' },
+];
+
 const journey = [
   { yr: '2012', what: 'Microsoft Student Partner', detail: 'Workshops, hackathons and Global Azure Bootcamps in Tunisia and Prague.' },
   { yr: '2014', what: 'Software engineering degree', detail: 'ISET Rades, Tunisia. Imagine Cup Tunisia finals the same year.' },
@@ -37,6 +42,13 @@ const journey = [
   <div class="cards">
     {stats.map((s) => (
       <div class="card"><div class="num">{s.num}</div><h3>{s.title}</h3><p>{s.text}</p></div>
+    ))}
+  </div>
+
+  <h2 class="section">Open source</h2>
+  <div class="cards">
+    {projects.map((p) => (
+      <a class="card card-link" href={p.url}><div class="proj-status">{p.status}</div><h3>{p.name}</h3><p>{p.text}</p></a>
     ))}
   </div>
 
