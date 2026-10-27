@@ -1,0 +1,12 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+<h1>Blog</h1>
+<p class="meta">Platform engineering, DevEx, GitHub, Azure and the occasional lesson learned the hard way.</p>
+{% assign by_year = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+{% for y in by_year %}
+<h2 class="year">{{ y.name }}</h2>
+{% include post-list.html posts=y.items %}
+{% endfor %}

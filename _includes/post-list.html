@@ -1,0 +1,12 @@
+<ul class="post-list">
+{% assign lim = include.limit | default: 1000 %}
+{% for post in include.posts limit: lim %}
+  <li>
+    <a href="{{ post.url | relative_url }}">
+      <span class="pl-title">{{ post.title }}</span>
+      <span class="pl-meta">{{ post.date | date: "%b %Y" }}{% if post.tags.size > 0 %} · {{ post.tags | slice: 0, 3 | join: ", " }}{% endif %}</span>
+      {% if include.excerpt %}<span class="pl-excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 28 }}</span>{% endif %}
+    </a>
+  </li>
+{% endfor %}
+</ul>
