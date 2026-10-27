@@ -16,7 +16,8 @@ for post in sorted(POSTS.glob("*.md")):
         if not dest.exists():
             dest.parent.mkdir(parents=True, exist_ok=True)
             try:
-                req = urllib.request.Request(url.split("?")[0], headers={"User-Agent": "Mozilla/5.0"})
+                src = "https://mohamedsahbicom.wordpress.com/wp-content/uploads/" + path
+                req = urllib.request.Request(src, headers={"User-Agent": "Mozilla/5.0"})
                 with urllib.request.urlopen(req, timeout=60) as r:
                     dest.write_bytes(r.read())
                 print("ok  ", url)
