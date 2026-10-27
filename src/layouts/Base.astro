@@ -1,0 +1,64 @@
+---
+import '../styles/global.css';
+import { SITE } from '../site';
+
+interface Props { title?: string; description?: string; }
+const { title, description = SITE.description } = Astro.props;
+const fullTitle = title ? `${title} | ${SITE.title}` : `${SITE.title} · ${SITE.tagline}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const path = Astro.url.pathname;
+const nav = [
+  { href: '/blog/', label: 'Blog' },
+  { href: '/about/', label: 'About' },
+  { href: '/now/', label: 'Now' },
+  { href: '/cv/', label: 'CV' },
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content={`@${SITE.x}`} />
+  <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/feed.xml" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/"><span class="brand-mark">MS</span> <span class="brand-name">Mohamed Sahbi</span></a>
+      <nav class="nav">
+        {nav.map((n) => (
+          <a href={n.href} class:list={{ active: path.startsWith(n.href) || (n.href === '/blog/' && /^\/\d{4}\//.test(path)) }}>{n.label}</a>
+        ))}
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <slot />
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© {new Date().getFullYear()} Mohamed Sahbi · Prague</span>
+      <span class="links">
+        <a href={`https://github.com/${SITE.github}`}>GitHub</a>
+        <a href={`https://www.linkedin.com/in/${SITE.linkedin}`}>LinkedIn</a>
+        <a href={`https://x.com/${SITE.x}`}>X</a>
+        <a href="/feed.xml">RSS</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>

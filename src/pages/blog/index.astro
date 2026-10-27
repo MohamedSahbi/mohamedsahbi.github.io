@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostList from '../../components/PostList.astro';
+import { getPosts } from '../../site';
+const posts = await getPosts();
+const years = [...new Set(posts.map((p) => p.data.date.getFullYear()))];
+---
+<Base title="Blog" description="Platform engineering, DevEx, GitHub, Azure and the occasional lesson learned the hard way.">
+  <h1>Blog</h1>
+  <p class="meta">Platform engineering, DevEx, GitHub, Azure and the occasional lesson learned the hard way.</p>
+  {years.map((y) => (
+    <>
+      <h2 class="year">{y}</h2>
+      <PostList posts={posts.filter((p) => p.data.date.getFullYear() === y)} />
+    </>
+  ))}
+</Base>

@@ -1,6 +1,6 @@
 # mohamedsahbi.com
 
-Personal site and blog, built with Jekyll and hosted on GitHub Pages.
+Personal site and blog, built with [Astro](https://astro.build) and deployed to GitHub Pages by `.github/workflows/deploy.yml`.
 
-- New post: add `_posts/YYYY-MM-DD-slug.md` with `title`, `tags` and `description` front matter.
-- Local preview: `bundle install && bundle exec jekyll serve`
+- New post: add `src/content/blog/YYYY-MM-DD-slug.md` with `title`, `date`, `description` and `tags` front matter. It is published at `/YYYY/MM/DD/slug/`.
+- Local preview: `npm install && npm run dev`, then open http://localhost:4321

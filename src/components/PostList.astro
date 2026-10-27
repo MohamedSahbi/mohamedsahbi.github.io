@@ -1,0 +1,17 @@
+---
+import { postPath, fmtDate, type Post } from '../site';
+interface Props { posts: Post[]; excerpt?: boolean; }
+const { posts, excerpt = false } = Astro.props;
+const clip = (s = '', n = 28) => { const w = s.split(/\s+/); return w.length > n ? w.slice(0, n).join(' ') + '…' : s; };
+---
+<ul class="post-list">
+  {posts.map((p) => (
+    <li>
+      <a href={postPath(p).url}>
+        <span class="pl-title">{p.data.title}</span>
+        <span class="pl-meta">{fmtDate(p.data.date, false)}{p.data.tags.length > 0 && ` · ${p.data.tags.slice(0, 3).join(', ')}`}</span>
+        {excerpt && p.data.description && <span class="pl-excerpt">{clip(p.data.description)}</span>}
+      </a>
+    </li>
+  ))}
+</ul>

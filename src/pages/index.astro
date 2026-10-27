@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import PostList from '../components/PostList.astro';
+import { SITE, getPosts } from '../site';
+const posts = (await getPosts()).slice(0, 5);
+
+const stats = [
+  { num: '2,000+', title: 'GitHub Copilot users', text: 'Took Copilot from a small proof of concept to a group service. The licenses were the easy part; the work was governance, training and support.' },
+  { num: '~50%', title: 'fewer Azure DevOps organizations', text: 'Set up the enterprise governance model for Azure DevOps and introduced backups for the platform.' },
+  { num: 'Self-service', title: 'Azure resource vending', text: 'Teams get resource groups, VMs and more through self-service requests, with Terraform and Bicep templates behind them.' },
+  { num: 'Learn, then teach', title: 'Communities', text: 'Started the DevOps Community of Practice and co-founded InnerSource at Atlas Copco.' },
+];
+
+const journey = [
+  { yr: '2012', what: 'Microsoft Student Partner', detail: 'Workshops, hackathons and Global Azure Bootcamps in Tunisia and Prague.' },
+  { yr: '2014', what: 'Software engineering degree', detail: 'ISET Rades, Tunisia. Imagine Cup Tunisia finals the same year.' },
+  { yr: '2018', what: 'DHL IT Services, Prague', detail: 'Web apps and chatbots, then service owner and acting DevOps lead of a SaaS product.' },
+  { yr: '2022', what: 'Atlas Copco Group', detail: 'Cloud Center of Excellence. Cloud automation, and product owner for GitHub Copilot and Azure DevOps.' },
+];
+---
+<Base>
+  <section class="hero">
+    <img class="avatar" src="/mohamed.jpg" alt="Mohamed Sahbi" width="112" height="112" />
+    <p class="eyebrow">Platform & Developer Experience</p>
+    <h1>I build the platforms that let enterprise engineers ship.</h1>
+    <p class="lead">As a kid, I wanted to build tools that make people's daily work easier. That's still what I do, just at a bigger scale. I'm a Cloud Automation and DevOps Engineer at Atlas Copco in Prague, working on the things developers use every day: Azure, GitHub Copilot, Azure DevOps, and the pipelines and guardrails around them.</p>
+    <div class="cta">
+      <a class="btn primary" href="/blog/">Read the blog</a>
+      <a class="btn" href="/now/">Now</a>
+      <a class="btn" href="/cv/">CV</a>
+      <a class="btn" href={`https://github.com/${SITE.github}`}>GitHub</a>
+      <a class="btn" href={`https://www.linkedin.com/in/${SITE.linkedin}`}>LinkedIn</a>
+    </div>
+  </section>
+
+  <h2 class="section">What I've been working on</h2>
+  <div class="cards">
+    {stats.map((s) => (
+      <div class="card"><div class="num">{s.num}</div><h3>{s.title}</h3><p>{s.text}</p></div>
+    ))}
+  </div>
+
+  <h2 class="section">The road so far</h2>
+  <ul class="journey">
+    {journey.map((j) => (
+      <li><span class="yr">{j.yr}</span><span><span class="what">{j.what}</span><span class="detail">{j.detail}</span></span></li>
+    ))}
+  </ul>
+
+  <h2 class="section">Latest writing</h2>
+  <PostList posts={posts} excerpt />
+  <p><a href="/blog/">All posts →</a></p>
+</Base>
