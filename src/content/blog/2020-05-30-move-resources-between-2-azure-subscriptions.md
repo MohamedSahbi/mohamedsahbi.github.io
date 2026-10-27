@@ -8,7 +8,7 @@ archived: true
 
 This blog post shows how to validate the move operation of resources between 2 Azure Subscriptions and how to move them successfully by going through all the steps needed.
 
-[![](https://mohamedsahbicom.files.wordpress.com/2020/05/mainfigure-1.png?w=1024)](https://mohamedsahbicom.files.wordpress.com/2020/05/mainfigure-1.png)
+[![](/images/wp/2020/05/mainfigure-1.png?w=1024)](/images/wp/2020/05/mainfigure-1.png)
 
 Figure 1 : Move resources between 2 subscriptions
 
@@ -38,19 +38,19 @@ First, Let's create an Azure service principal (sp). If you are not familiar wit
 
 Create the application with just 2 clicks in Azure Portal: go to Azure Active Directory >> App registrations >> fill the form. You can do it also with [PowerShell](https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-3.8.0) or [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
 
-[![](https://mohamedsahbicom.files.wordpress.com/2020/05/create-service-principal.gif)](https://mohamedsahbicom.files.wordpress.com/2020/05/create-service-principal.gif)
+[![](/images/wp/2020/05/create-service-principal.gif)](/images/wp/2020/05/create-service-principal.gif)
 
 Figure 2 : Register an Azure Application
 
 Next, we generate a **client secret** by going to Certificates & Secrets tab and clicking on Add a client secret. Note the client secret, we will need it in the next steps.
 
-[![](https://mohamedsahbicom.files.wordpress.com/2020/05/generate-client-secret.gif)](https://mohamedsahbicom.files.wordpress.com/2020/05/generate-client-secret.gif)
+[![](/images/wp/2020/05/generate-client-secret.gif)](/images/wp/2020/05/generate-client-secret.gif)
 
 Figure 3 : Generate a client secret
 
 Finally, we have to assign the **Contributor role** for the registered application in the **source** resource group.
 
-[![](https://mohamedsahbicom.files.wordpress.com/2020/05/azure-assign-role.gif?w=1024)](https://mohamedsahbicom.files.wordpress.com/2020/05/azure-assign-role.gif)
+[![](/images/wp/2020/05/azure-assign-role.gif?w=1024)](/images/wp/2020/05/azure-assign-role.gif)
 
 Figure 4 : Assign contributor role
 
@@ -106,7 +106,7 @@ Create a new http request in Postman, go straight to the body tab, and choose th
 
 It should look like this:
 
-[![](https://mohamedsahbicom.files.wordpress.com/2020/05/image-4.png)](https://mohamedsahbicom.files.wordpress.com/2020/05/image-4.png)
+[![](/images/wp/2020/05/image-4.png)](/images/wp/2020/05/image-4.png)
 
 Figure 5 : Request body
 
@@ -121,7 +121,7 @@ We get it by making a POST Call to `https://login.microsoftonline.com/<subscript
 - client_Secret : the noted client secret in the first step
 - resource : https://management.azure.com/
 
-[![](https://mohamedsahbicom.files.wordpress.com/2020/05/image.png?w=1024)](https://mohamedsahbicom.files.wordpress.com/2020/05/image.png)
+[![](/images/wp/2020/05/image.png?w=1024)](/images/wp/2020/05/image.png)
 
 Figure 6: Get an Oauth2 token
 
@@ -131,13 +131,13 @@ All the previous steps lead to this action. Go to the Post request created in th
 
 The authorization type is a Bearer token. Use the received access token that we gained in the previous step.
 
-[![](https://mohamedsahbicom.files.wordpress.com/2020/05/image-1.png?w=1024)](https://mohamedsahbicom.files.wordpress.com/2020/05/image-1.png)
+[![](/images/wp/2020/05/image-1.png?w=1024)](/images/wp/2020/05/image-1.png)
 
 Figure 7 : Add an authorization token
 
 Send it. The response status code should be **202 Accepted** with an empty response body.
 
-[![](https://mohamedsahbicom.files.wordpress.com/2020/05/validatemoveresources.png?w=1024)](https://mohamedsahbicom.files.wordpress.com/2020/05/validatemoveresources.png)
+[![](/images/wp/2020/05/validatemoveresources.png?w=1024)](/images/wp/2020/05/validatemoveresources.png)
 
 Figure 8 : Validate move resources
 
@@ -158,7 +158,7 @@ I am a lazy person, so I always choose the easiest way. That means Portal is the
 
 Go to the source resource group, click on Move and choose **to another subscription**. Next check the checkbox for the resources that you want to move, select the target subscription and the target resource group. Finally click ok.
 
-[![](https://mohamedsahbicom.files.wordpress.com/2020/05/move-resource.gif?w=1024)](https://mohamedsahbicom.files.wordpress.com/2020/05/move-resource.gif)
+[![](/images/wp/2020/05/move-resource.gif?w=1024)](/images/wp/2020/05/move-resource.gif)
 
 Figure 9 : Move resources
 

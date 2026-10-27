@@ -6,7 +6,7 @@ tags: ["Non-Technical"]
 archived: true
 ---
 
-![](https://mohamedsahbicom.files.wordpress.com/2020/09/rocketriding_640.png?w=640)
+![](/images/wp/2020/09/rocketriding_640.png)
 
 Source: Image by [Joe Alfaraby](https://pixabay.com/users/mixrobastudio-4987992/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2550646) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2550646)
 
@@ -61,7 +61,7 @@ This will keep you motivated. If you had a bad day and code did not work, you wo
 
 You will also notice how consistency pays off even with the smallest effort. And if you are a math lover, the following calculation shows how a bit of daily effort does the difference on one year:
 
-![](https://mohamedsahbicom.files.wordpress.com/2020/09/rule1.01.png?w=420)
+![](/images/wp/2020/09/rule1.01.png)
 
 Source: [pinterest](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F268456827762890472%2F&psig=AOvVaw1UUS89G1-wqQHf3RNOGfbs&ust=1600243869224000&source=images&cd=vfe&ved=2ahUKEwjH36aM2-rrAhUJ_hoKHb9YCLkQr4kDegQIARB-) *
 

@@ -22,7 +22,7 @@ So, we started the migration process and it did not go as planned (like always).
 
 > BadArgument: The models: { BookFlight } already exist in the specified application version.
 
-![](https://mohamedsahbicom.files.wordpress.com/2019/12/luismigrationdemo.gif?w=1024)
+![](/images/wp/2019/12/luismigrationdemo.gif)
 
 Figure 1 : Import Application
 
@@ -43,7 +43,7 @@ There are 2 solutions for this problem:
 
 To retrace the error, upload the application that is provided in this GitHub repository. An other option to retrace the error is by adding an entity with the name of an existing intent or the other way around.
 
-![](https://mohamedsahbicom.files.wordpress.com/2019/12/image.png?w=1024)
+![](/images/wp/2019/12/image.png)
 
 Figure 2: Create new entity
 

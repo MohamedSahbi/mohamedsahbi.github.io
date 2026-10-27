@@ -10,7 +10,7 @@ In this blog post, I want to show you how I solved the problem of getting commit
 
 If you want the solution straight away , click [here](#solution) to skip the explanation of the problem.
 
-![](https://mohamedsahbicom.files.wordpress.com/2019/12/octocat.png?w=800)
+![](/images/wp/2019/12/octocat.png)
 
 GitHub Octocat (*source:* <https://github.com/logos>)
 

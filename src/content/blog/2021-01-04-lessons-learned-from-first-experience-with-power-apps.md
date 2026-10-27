@@ -6,7 +6,7 @@ tags: ["Microsoft", "Power Platform"]
 archived: true
 ---
 
-![](https://mohamedsahbicom.files.wordpress.com/2021/01/powerapps_logo.png?w=521)
+![](/images/wp/2021/01/powerapps_logo.png)
 
 Source: PowerApps official [site](https://powerapps.microsoft.com/en-us/)
 
@@ -30,7 +30,7 @@ This error occurs when you delete a Power Automate flow that was used by the app
 
 Saving the changes will not make the problem disappear; you have to publish it because the export applies only to the live version (published version).
 
-![](https://mohamedsahbicom.files.wordpress.com/2021/01/cannot_export_app.png)
+![](/images/wp/2021/01/cannot_export_app.png)
 
 Figure 1: Export Power App Package
 
@@ -42,7 +42,7 @@ The Power Platform team agreed on minimum integration and sync between Power Aut
 
 It is like magic! When you add a new flow to OnSelect or any other function, it deletes the current code and it replaces it with **`flowName.Run(`** .I am not sure who thought that this can be a good idea.. Please copy your code before adding a flow. You will need this in case you renamed the flow or added a new parameter.
 
-![](https://mohamedsahbicom.files.wordpress.com/2021/01/powerapps_new_flow_deletes_code.gif)
+![](/images/wp/2021/01/powerapps_new_flow_deletes_code.gif)
 
 Figure 2: Add new flow to a Power App
 
@@ -50,7 +50,7 @@ Figure 2: Add new flow to a Power App
 
 A product development goes through changes especially when working with Agile methodologies. You may have to add parameters to the flow. When using the flow in Power Apps, the tooltip does not support multiple arguments (I did not measure it, but I have to work with flows that have more than 6 arguments and up to 13 arguments). At one point, you don’t know which argument you are setting and you cannot call its name, because the tooltip will show non-clickable three dots.
 
-![](https://mohamedsahbicom.files.wordpress.com/2021/01/powerautomate_tooltip.png)
+![](/images/wp/2021/01/powerautomate_tooltip.png)
 
 Figure 3: Flow ToolTip
 
@@ -72,7 +72,7 @@ I needed to use multiple hierarchies in the app alongside some metrics. At one m
 
 What is the size limits? Well, who knows! I asked in Power Apps forum, but I did not get an answer. So, keep binding data until you achieve the limit or try to keep it clean and bind the minimum. Also, avoid binding hierarchies and such types because the report will take more time to load.
 
-![](https://mohamedsahbicom.files.wordpress.com/2021/01/powerappvisual_doestnotload.png)
+![](/images/wp/2021/01/powerappvisual_doestnotload.png)
 
 Figure 4: Power App loading forever
 

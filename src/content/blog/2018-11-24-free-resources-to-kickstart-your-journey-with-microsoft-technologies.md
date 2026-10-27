@@ -20,7 +20,7 @@ Let's go through the resources provided by Microsoft and its partners that will 
 
 **[Microsoft virtual academy](https://mva.microsoft.com/)** or **MVA** has been around for years. Basically, it is a free online school that provides different courses covering .NET and topics related to Microsoft products. Whether you are a beginner or intermediate level or advanced, MVA has something to offer. Moreover, if you have a problem learning in English, you can search for courses in your native language.
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/11/mva.png?w=636)
+![](/images/wp/2018/11/mva.png)
 
 To help you choose the right courses, MVA offers different [Learning Paths](https://mva.microsoft.com/LearningPaths.aspx) and suggests some starting points for students, developers, etc.
 
@@ -30,7 +30,7 @@ To help you choose the right courses, MVA offers different [Learning Paths](http
 
 **[Microsoft AI school](https://aischool.microsoft.com/)**, launched in 2017, is one of the latest learning platforms offered by Microsoft. It is designed to help those who are interested in Data science and Artificial Intelligence to improve their skills. AI School has different courses with various levels. You can also find AI demos with code source in github. If you don't know where to start, the platform will help you choose the learning path using the **path builder**, which is a real example of the implementation of Machine Learning to create magic tools.
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/11/aischool.gif)
+![](/images/wp/2018/11/aischool.gif)
 
 ## 
 
@@ -39,7 +39,7 @@ all content is organized by a learning path. For the moment, there are different
 
 Microsoft Learn is replacing Microsoft Virtual Academy starting from January 2019.
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/11/microsoftlearn.gif)
+![](/images/wp/2018/11/microsoftlearn.gif)
 
 **If you are interested in other products rather than Azure and Business Applications, this is not the right place, but it will**  
 **have for sure others learning paths in the future.**
@@ -52,7 +52,7 @@ The Tech Academy is part of the [Tech Community](https://techcommunity.microsoft
 
 ## 
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/11/dnrj3ufn_400x400.jpg)
+![](/images/wp/2018/11/dnrj3ufn_400x400.jpg)
 
 source: [twitter.com/ch9](https://twitter.com/ch9)
 
@@ -85,7 +85,7 @@ According to their website, they have more than 19000 courses from 100+ Universi
 
 Microsoft has different courses in edx.org. To check it, go to [edx.org/school/microsoft](https://www.edx.org/school/microsoft)
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/11/edxorg.gif)
+![](/images/wp/2018/11/edxorg.gif)
 
 ## 
 
@@ -99,7 +99,7 @@ source: [www.datacamp.com/brand](https://www.datacamp.com/brand)
 
 ## 
 
-![](https://mohamedsahbicom.files.wordpress.com/2019/03/ps_logo_f-11.png)
+![](/images/wp/2019/03/ps_logo_f-11.png)
 
 source: [www.pluralsight.com](https://www.pluralsight.com/newsroom/brand-assets)
 
@@ -115,13 +115,13 @@ We went through the different websites and platforms that are providing content,
 
 Formerly known as **DreamSpark**, **[Microsoft Imagine](https://imagine.microsoft.com/)** provides students with a set of software and tools for free. To obtain them, you need to create an account with your student email or verify your account using a Code provided by Microsoft (Contact Microsoft Student Partners in your University/Country or the regional Microsoft office to help you with it).
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/11/microsoftimagine.png)
+![](/images/wp/2018/11/microsoftimagine.png)
 
 The same platform may offer you more if your school has a web store subscription, you can search it [here](https://imagine.microsoft.com/en-us/catalog/webstore), if it is not the case, try to convince your school to join the program. For more details, please check this [link](https://imagine.microsoft.com/en-us/Institutions).
 
 **Github student pack**
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/11/githubstudentpack.png)
+![](/images/wp/2018/11/githubstudentpack.png)
 
 Github gives you the opportunity to shine with 25 premium tools for 0$. You only need to verify your account with a student email. If you already have an account on github, just add your student email in your account settings.
 

@@ -8,7 +8,7 @@ archived: true
 
 "I am suffering from these tools, they consume a lot of memory and they need a lot of space" or " I am overwhelmed with the features of this tool, somehow I find myself lost and I can't figure out how to do simple tasks".. Does this sound familiar to you? Many tools nowadays offer great features but we need terabytes of storage to have them locally and a powerful device is needed too. Well, today is your lucky day if you are dealing with databases. Have you heard about **Azure Data Studio**? In this post, I will give you some tips to improve your work performance with Azure Data Studio. Here is the structure of this blog post.
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/12/AzureDataStudio-2.jpg)
+![](/images/wp/2018/12/AzureDataStudio-2.jpg)
 
 Source: [@AzureDataStudio](https://twitter.com/AzureDataStudio)
 
@@ -50,7 +50,7 @@ The Queen of Vermont and Entity Framework [@Julie Lerman](https://twitter.com/ju
 
 The User Interface of Azure Data Studio is similar to the one of Visual Code. It is simpler and not overwhelmed with menus. It has the classic left sidebar as it is the case in VS Code. You can split the window the way you want (literally limitless splitting). Figure 1 shows you how to change **theme color**.
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/12/ADS_changeTheme.gif?w=964)
+![](/images/wp/2018/12/ADS_changeTheme.gif)
 
 Figure 1: change theme color
 
@@ -58,7 +58,7 @@ Figure 1: change theme color
 
 Most of us have at least 2 devices: a business laptop, and personal laptop/tablet. Let’s say you tested Azure Data Studio in your personal device and customized it. Then, you decided to install it in the second device with the same customized settings. I got you covered! It is easier than you think. I will recreate the two first steps in the Figure 2. (1) Open user settings by clicking on the Settings logo in the bottom left corner and then settings, you can open it from command palette: open it using the keyboard shortcut CTRL+comma. (2) Now, move the cursor over the tab and give it a right click, then “Reveal in Explorer”. (3) Copy the file settings.json and send it to your work device. (4) Repeat the same first steps in your work device and finish it by replacing the current settings.json file with the other file. Done.
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/12/ADS_exportUserSettings-3.gif)
+![](/images/wp/2018/12/ADS_exportUserSettings-3.gif)
 
 Figure 2: export user settings
 
@@ -92,7 +92,7 @@ I only replace the Shell path string
 
 It is a simple tip, but it is worth it in case you have many subscriptions. Azure Data Studio allows **multiple linked accounts**, that means you can connect to different Azure accounts and use all the resources at the same time, which is really COOL. However, you may have many subscriptions and you will not use all of them. To get rid of the unnecessary ones, you use the subscription filter by hovering over the account as it is demonstrated in Figure 3.
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/12/ADS_subscriptionsFilter.gif?w=922)
+![](/images/wp/2018/12/ADS_subscriptionsFilter.gif)
 
 Figure 3: subscriptions filter
 
@@ -100,7 +100,7 @@ Figure 3: subscriptions filter
 
 I just discovered it while writing the Subscriptions Filter tip that it may be tricky to connect to a second or third Azure account. You need to click on the person icon (bottom left corner of the window). Figure 4 shows you the way.
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/12/ADS_connectMultipleAzureAccounts.gif?w=1024)
+![](/images/wp/2018/12/ADS_connectMultipleAzureAccounts.gif)
 
 Figure 4: connect to multiple Azure accounts
 
@@ -118,7 +118,7 @@ Or
 Terminal: Run Selected Text in Active Terminal
 ```
 
-![](https://mohamedsahbicom.files.wordpress.com/2018/12/ADS_runScript.gif?w=1024)
+![](/images/wp/2018/12/ADS_runScript.gif)
 
 Figure 5: Run script from file
 

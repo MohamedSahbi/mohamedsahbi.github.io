@@ -8,7 +8,7 @@ archived: true
 
 Microsoft [announced](https://blogs.windows.com/buildingapps/2019/03/06/announcing-the-open-sourcing-of-windows-calculator/) on Wednesday 6th of March 2019 that it made Windows Calculator an open source software (you can find it on [GitHub](https://github.com/Microsoft/calculator/tree/master/src/Calculator)). Suddenly, the internet went crazy with memes and posts mocking the last announcement judging it as a small piece of code, it’s not worth it and blah blah blah.
 
-![](https://mohamedsahbicom.files.wordpress.com/2019/03/image.png)
+![](/images/wp/2019/03/image.png)
 
 Figure 1: Windows Calculator. *source: me*
 
@@ -20,7 +20,7 @@ projects, and they feel proud of it (at least I was proud of my Calculator
 project). You start with simple operations, but you find out that Parsing is
 needed and some conditions are a must so that the app does not crash.
 
-![](https://mohamedsahbicom.files.wordpress.com/2019/03/students-99506_640.jpg)
+![](/images/wp/2019/03/students-99506_640.jpg)
 
 Figure 2: young boys on computers. *source: [pixabay](https://pixabay.com/photos/students-computer-young-boy-99506/)*
 
@@ -55,7 +55,7 @@ Finally, they won’t stop in the development phase, but they will learn Azure P
 deployment and release phases. This is so important because it can be hard to
 apply CI/CD in the first projects.
 
-![](https://mohamedsahbicom.files.wordpress.com/2019/03/hands-2227857_640.jpg)
+![](/images/wp/2019/03/hands-2227857_640.jpg)
 
 Figure 3: thumbs up. *source*: *[pixabay](https://pixabay.com/photos/hands-fingers-positive-bracelets-2227857/)*
 
