@@ -10,6 +10,8 @@ At work, GitHub Copilot is available to 2,000+ engineers, and our focus now is a
 
 The venue and the vibe were great, but the best part was the people. I finally met, in person, folks from GitHub and from partners like Xebia that I had only worked with online. Among them Rob Bos and Anton Sizikov.
 
+It was also a great chance to talk to the people behind GitHub: product owners, engineers and experts. We could give feedback and ask for changes and improvements. One I raised: when Copilot asks you to pick an option, the choices suddenly appear in the chat input box while you are writing. The Claude app does it better, showing them in the conversation.
+
 ![The Universe '26 stage](/images/posts/universe-2026/universe-stage.jpg)
 
 ## What GitHub announced
@@ -49,7 +51,7 @@ A few things I learned from Tiffany Powell and Christopher Blake, who presented 
 - Your level stays for six months, but it is not forever. If you use Copilot less, it can go down. Copilot changes fast, so this makes sense.
 - The evaluation looks at roughly the last 28 days.
 
-I opted in and got my level: "None". I have Copilot Pro on my personal account, but I mostly use Copilot with my company license, so there was little data to evaluate. I told the team, and they are looking into it.
+I opted in and got my level: "None". I have Copilot Pro on my personal account, but I mostly use Copilot with my company license, so there was little data to evaluate. The team explained that this is what happens when there is no data to look at.
 
 ## What I'm taking home
 
