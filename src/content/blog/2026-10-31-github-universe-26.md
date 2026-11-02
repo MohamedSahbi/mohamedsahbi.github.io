@@ -10,7 +10,7 @@ At work, GitHub Copilot is available to 2,000+ engineers, and our focus now is a
 
 The venue and the vibe were great, but the best part was the people. I finally met, in person, folks from GitHub and from partners like Xebia that I had only worked with online. Among them Rob Bos and Anton Sizikov.
 
-It was also a great chance to talk to the people behind GitHub: product owners, engineers and experts. We could give feedback and ask for changes and improvements. One I raised: when Copilot asks you to pick an option, the choices suddenly appear in the chat input box while you are writing. The Claude app does it better, showing them in the conversation.
+It was also a great chance to talk to the people behind GitHub: product owners, engineers and experts, and to share feedback directly. One small thing I mentioned that has been bothering me: when Copilot asks you to pick an option, the choices appear in the chat input box while you are still writing. I find it easier when they show up in the conversation, like in the Claude app.
 
 ![The Universe '26 stage](/images/posts/universe-2026/universe-stage.jpg)
 
