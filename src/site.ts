@@ -8,6 +8,10 @@ export const SITE = {
   github: 'MohamedSahbi',
   linkedin: 'mohamedsahbi',
   x: 'Sahbi_Mohamed',
+  // GoatCounter site code (the "<code>" in https://<code>.goatcounter.com). Empty = no analytics.
+  goatcounter: 'mohamedsahbi',
+  // Analytics only run on this host, so local dev and previews are not counted.
+  productionHost: 'mohamedsahbi.com',
 };
 
 export type Post = CollectionEntry<'blog'>;
