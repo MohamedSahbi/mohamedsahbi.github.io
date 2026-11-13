@@ -7,6 +7,9 @@ const { title, description = SITE.description } = Astro.props;
 const fullTitle = title ? `${title} | ${SITE.title}` : `${SITE.title} · ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const path = Astro.url.pathname;
+const analytics = import.meta.env.PROD && SITE.goatcounter
+  ? { endpoint: `https://${SITE.goatcounter}.goatcounter.com/count`, host: SITE.productionHost }
+  : null;
 const nav = [
   { href: '/blog/', label: 'Blog' },
   { href: '/about/', label: 'About' },
@@ -34,6 +37,17 @@ const nav = [
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  {analytics && (
+    <script is:inline define:vars={analytics}>
+      if (location.hostname === host) {
+        const s = document.createElement('script');
+        s.async = true;
+        s.dataset.goatcounter = endpoint;
+        s.src = 'https://gc.zgo.at/count.js';
+        document.head.appendChild(s);
+      }
+    </script>
+  )}
 </head>
 <body>
   <header class="site-header">
